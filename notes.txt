@@ -1,0 +1,9 @@
+---Just a random notes and thoughts as I go through the ElixirSchool Basics---
+1. Basics:
+	Atoms are constants whose names are also values 
+	Names of modules in Elixir are atoms.
+	Booleans True and False are also atoms.
+	Elixir allows skipping of the colon : before true, false, and nil.
+		Use: Atom.__info__(:functions) to see all functions available for the modules
+	Division by default will give a float as a returned value, if needed an int there
+	are functions available: like div
