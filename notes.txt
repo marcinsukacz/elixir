@@ -26,3 +26,12 @@
 	Concatination: "Hi " <> name
 
 2. Collections:
+	Lists
+	Tuples
+	Maps are "go to" elixir's key value store. Unlike keyword lists, they allow keys of any type and are un-ordered
+	Keyword lists are most commonly used to pass options to functions bacause: 
+		Keys are atoms.
+		Keys are ordered.
+		Keys do not have to be unique.
+		
+		pick up with maps vs keyword lists in practice
