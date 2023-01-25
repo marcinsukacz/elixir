@@ -7,3 +7,22 @@
 		Use: Atom.__info__(:functions) to see all functions available for the modules
 	Division by default will give a float as a returned value, if needed an int there
 	are functions available: like div
+	Logical operators:
+		or, and, and not are strictly boolean operators, which means that they expect their arguments to be a boolean value.
+		or - Checks if either value is truthy. If neither value is truthy, it returns false
+		and - Returns true if both values are truthy. Else it returns false
+		not - Unary operator that inverts the input value
+		Unary operation is an operation with only one operand, i.e. a single input.
+		Note: or and and are short-circuit operators, which means that they will only execute the right side if the left side is not enough to determine the return value.
+		--------------------------------------------------
+		||, && and ! accept any value type. For these operators, all values will return true except false and nil.
+		|| - Same functionality as or, but does not expect boolean for either argument
+		&& - Same functionality as and, but does not expect boolean for either argument
+		! - Same functionality as not, but does not expect boolean for either argument
+		
+	Note: Elixir’s and and or actually map to andalso and orelse in Erlang.
+	
+	Interpolation: "Hi #{name}"
+	Concatination: "Hi " <> name
+
+2. Collections:
