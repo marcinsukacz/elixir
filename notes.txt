@@ -26,12 +26,22 @@
 	Concatination: "Hi " <> name
 
 2. Collections:
-	Lists
-	Tuples
+	Lists:  [3.14, :pie, "Apple"]
+	Tuples: {3.14, :pie, "Apple"}
 	Maps are "go to" elixir's key value store. Unlike keyword lists, they allow keys of any type and are un-ordered
 	Keyword lists are most commonly used to pass options to functions bacause: 
 		Keys are atoms.
 		Keys are ordered.
 		Keys do not have to be unique.
 		
-		pick up with maps vs keyword lists in practice
+	Mind that dot syntax when accessing values of the keyes is reserved forMaps only
+	When key in a map is an atom we can access the pair's value by using dot convention (i.e. Map.key1)
+	update existing key: %{map | foo: "baz"}
+	create a new key: Map.put(map, :foo, "baz")
+	
+3.Enum:
+  A set of algorithms for enumerating over enumerables.
+  
+  return to common functions of the enum module
+
+           
