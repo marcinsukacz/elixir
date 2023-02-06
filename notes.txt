@@ -41,7 +41,10 @@
 	
 3.Enum:
   A set of algorithms for enumerating over enumerables.
-  
-  return to common functions of the enum module
+	common functions of the enum module:
+		all?
+		any?
+		chunk_every
+		chunk_by - revisit
 
            
