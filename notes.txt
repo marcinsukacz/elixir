@@ -45,6 +45,16 @@
 		all?
 		any?
 		chunk_every
-		chunk_by - revisit
+		chunk_by
+		map_every
+		each
+		map
+		min
+		max
+		filter
+		reduce
+		sort
+		unique
+		
 
            
