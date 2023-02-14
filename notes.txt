@@ -65,7 +65,13 @@
 	if and unless
 	cases
 	
-	study th use of pin ^ in elixir
+	the use of pin ^ in elixir
+	The pin operator
+		Now that you understand what pattern matching is, let’s have a look at the pin ( ^ ) operator !
+		remember the two effect of pattern matching :
+			it matches the value on the left hand side with the value on the right hand side. if it matches and if the left hand side includes a variable, it assigns the corresponding value from the right hand side to the variable.
+		This is great but sometimes, for some reasons, I just want to make sure what I have on the left hand side matches with what I have on the right hand side, without any assignment in case I have a variable on the left hand side. In other words, I just want to compare both sides.
+		This is exactly what the ^ operator allows me to do : It pins the variable on its value and prevent any assignment to this variable when using pattern matching.
 
 		
 
