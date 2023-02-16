@@ -74,7 +74,17 @@
 		This is exactly what the ^ operator allows me to do : It pins the variable on its value and prevent any assignment to this variable when using pattern matching.
 		
 		read more here: https://medium.com/@Julien_Corb/understand-the-pin-operator-in-elixir-a6f534d865a6
-
 		
+	guard clauses
+	cond - When we need to match conditions rather than values we can turn to cond instead of case
+	with else
+
+6. Functions
+	In Elixir and many functional languages, functions are first class citizens. 
+	
+	Anonymous functions + shortcut
+		
+
+
 
            
