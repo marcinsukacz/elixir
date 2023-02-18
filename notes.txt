@@ -79,11 +79,45 @@
 	cond - When we need to match conditions rather than values we can turn to cond instead of case
 	with else
 
-6. Functions
+6. Functions:
 	In Elixir and many functional languages, functions are first class citizens. 
 	
-	Anonymous functions + shortcut
+	Anonymous functions + shortcut 
+							sum = &(&1 + &2) , parameters are available to us as &1, &2, &3, and so on.
+	
+	Pattern matching - isn’t limited to just variables in Elixir, it can be applied to function signatures. Elixir uses pattern matching to check through all possible match options and select the first matching option to run.
+	
+	Named functions - defmodule Module_name
+						def function_name do
+							do something
+							end
+						end
+	
+	Function naming and arity
+		Functions pattern-match the data passed in to each of its arguments independently. We can use this to bind values to separate variables within the function.
+	Private functions - can only be called from within their own Module. We define them in Elixir with defp
+	
+	Guards
+	Default arguments - If we want a default value for an argument we use the argument \\ value syntax
+		Elixir doesn’t like default arguments in multiple matching functions, it can be confusing. To handle this we add a function head with our default arguments:
+			defmodule Greeter do
+			  def hello(names, language_code \\ "en")
+
+			  def hello(names, language_code) when is_list(names) do
+				names = Enum.join(names, ", ")
+
+				hello(names, language_code)
+			  end
+
+			  def hello(name, language_code) when is_binary(name) do
+				phrase(language_code) <> name
+			  end
+
+			  defp phrase("en"), do: "Hello, "
+			  defp phrase("es"), do: "Hola, "
+            end
 		
+7. Pipe Operator
 
 
 
