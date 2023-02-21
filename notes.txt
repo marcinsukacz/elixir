@@ -118,6 +118,8 @@
             end
 		
 7. Pipe Operator
+	foo(bar(baz(new_function(other_function())))) vs other_function() |> new_function() |> baz() |> bar() |> foo()
+	
 
 
 
